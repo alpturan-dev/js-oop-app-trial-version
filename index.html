@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Yapılacak İndirim</title>
+    <script src="index.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            background-color: darkslategrey;
+        }
+
+        .container {
+            border: 1px solid gray;
+            border-radius: 40px;
+            width: 400px;
+            height: 300px;
+            padding: 60px;
+            text-align: center;
+            background-color: darkcyan;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        span,
+        label,
+        button {
+            color: #fff;
+            background-color: darkcyan;
+        }
+
+        .input,
+        select {
+            margin-bottom: 2rem;
+            background-color: #fff;
+
+        }
+
+
+        .sonuc {
+            color: lightsteelblue;
+            font-size: 25px;
+            margin-top: 2rem;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <span>Alınan ürünün fiyatı:</span>
+        <input type="text" class="input"> <br>
+        <select name="kisi" id="kisi" class="select">
+            <option id="ogrenci" value="ogrenci">ogrenci</option>
+            <option id="ogretmen" value="ogretmen">Öğretmen</option>
+            <option id="duz" value="duz">Düz Tarife</option>
+        </select> <br>
+        <label for="input" class="label">İndirimli Fiyat</label>
+        <button class="hesapla">HESAPLA</button>
+        <p class="sonuc"></p>
+    </div>
+
+</body>
+
+
+</html>
